@@ -1,0 +1,12 @@
+// Poetry Club Door Policy
+
+let poem_Michael_Lockwood = "Stands so high\nHuge hooves too\nImpatiently waits for\nReins and harness\nEager to leave";
+
+var new_word = poem_Michael_Lockwood.split('\n').map(word => word.charAt(0)).join('');
+console.log(new_word);
+var word = poem_Michael_Lockwood.split('\n').map(word => word.charAt(word.length -1)).join('');
+console.log(word);
+word=word[0].toUpperCase() + word.substring(1);
+new_word=new_word.charAt(0)+new_word.substring(1).toLowerCase()
+console.log(new_word);
+console.log(word);
